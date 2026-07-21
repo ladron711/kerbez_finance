@@ -99,6 +99,7 @@ async def category_process(callback: CallbackQuery, state: FSMContext):
         for worker in workers:
             kb.button(text=worker.name, callback_data=f"worker_{worker.id}")
         kb.button(text="Отмена ❌", callback_data="cancel")
+        kb.adjust(3)
 
         await state.set_state(AddTransaction.waiting_for_worker)
         await callback.message.edit_text("Выберите сотрудника:", reply_markup=kb.as_markup())
