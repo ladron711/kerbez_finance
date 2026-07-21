@@ -57,4 +57,4 @@ async def get_income_summary(period: timedelta) -> dict:
 def format_categories(by_category: dict) -> str:
     if not by_category:
         return "—"
-    return "\n".join(f"  {name}: {total}" for name, total in by_category.items())
+    return "\n".join(f"  {name}: {total:.0f}" for name, total in by_category.items())
