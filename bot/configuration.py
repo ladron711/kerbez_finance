@@ -9,3 +9,5 @@ load_dotenv(BASE_DIR / ".env")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 USER_IDS = [int(user) for user in os.getenv("USERS_ID").split(',')]
+
+ADMIN_URL = os.getenv("ADMIN_URL")

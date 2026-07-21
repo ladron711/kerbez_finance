@@ -11,6 +11,8 @@ from core.models import User, Worker, Category, Transaction
 from core.analytics import get_expense_summary, get_income_summary, format_categories, get_worker_summary
 from bot.states import AddTransaction
 
+from bot.configuration import ADMIN_URL
+
 
 router = Router()
 
@@ -46,6 +48,11 @@ async def start_command(message:Message):
         defaults={"name": message.from_user.full_name},
     )
     await message.answer("Money, money, don't be funny", reply_markup=get_main_keyboard())
+
+
+@router.message(Command("admin"))
+async def admin_link(message: Message):
+    await message.answer(f"Админ панель: {ADMIN_URL}")
 
 
 @router.callback_query(F.data == "add_transaction")
