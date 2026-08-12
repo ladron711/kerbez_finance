@@ -49,19 +49,31 @@ git clone https://github.com/ladron711/kerbez_finance.git
 cd kerbez_finance
 ```
 2. Create `.env` file based on `.env.example` and fill in all variables
+
 | Variable | Description |
 |---|---|
 | `BOT_TOKEN` | Telegram bot token from @BotFather |
+
 | `USER_ID` | telegram id of users |
+
 | `POSTGRES_DB` | PostgreSQL database name |
+
 | `POSTGRES_USER` | PostgreSQL username |
+
 | `POSTGRES_PASSWORD` | PostgreSQL password |
+
 | `POSTGRES_HOST` | PostgreSQL host (use `db` for Docker) |
+
 | `POSTGRES_PORT` | PostgreSQL port (default: 5432) |
+
 | `DEBUG` | False |
+
 | `ALLOWED_HOSTS` | server IP |
+
 | `DJANGO_SECRET_KEY` | Secret key |
+
 | `ADMIN_URL` | url of admin page |
+
 
 3. Build and start containers
 ```bash
