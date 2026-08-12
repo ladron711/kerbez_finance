@@ -61,7 +61,7 @@ cd kerbez_finance
 │ `ALLOWED_HOSTS` │ server IP │
 │ `DJANGO_SECRET_KEY` │ Secret key │
 │ `ADMIN_URL` │ url of admin page │
-
+│---│---│
 3. Build and start containers
 ```bash
 docker compose up --build -d
