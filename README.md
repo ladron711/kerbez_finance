@@ -49,7 +49,8 @@ git clone https://github.com/ladron711/kerbez_finance.git
 cd kerbez_finance
 ```
 2. Create `.env` file based on `.env.example` and fill in all variables
-│---│---│
+| Variable | Description |
+|---|---|
 │ `BOT_TOKEN` │ Telegram bot token from @BotFather │
 │ `USER_ID` │ telegram id of users │
 │ `POSTGRES_DB` │ PostgreSQL database name │
@@ -61,7 +62,7 @@ cd kerbez_finance
 │ `ALLOWED_HOSTS` │ server IP │
 │ `DJANGO_SECRET_KEY` │ Secret key │
 │ `ADMIN_URL` │ url of admin page │
-│---│---│
+
 3. Build and start containers
 ```bash
 docker compose up --build -d
